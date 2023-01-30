@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		A123F668297FF27D00A2ABD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123F667297FF27D00A2ABD5 /* AppDelegate.swift */; };
 		A123F66A297FF27D00A2ABD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123F669297FF27D00A2ABD5 /* SceneDelegate.swift */; };
-		A123F66C297FF27D00A2ABD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123F66B297FF27D00A2ABD5 /* ViewController.swift */; };
+		A123F66C297FF27D00A2ABD5 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123F66B297FF27D00A2ABD5 /* GCDViewController.swift */; };
 		A123F66F297FF27D00A2ABD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A123F66D297FF27D00A2ABD5 /* Main.storyboard */; };
 		A123F671297FF27E00A2ABD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A123F670297FF27E00A2ABD5 /* Assets.xcassets */; };
 		A123F674297FF27E00A2ABD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A123F672297FF27E00A2ABD5 /* LaunchScreen.storyboard */; };
+		A16D5D482987C7CC002657CC /* QueueAndMutexTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D5D472987C7CC002657CC /* QueueAndMutexTest.swift */; };
+		A16D5D4C2987D7B6002657CC /* AdditionalGCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D5D4B2987D7B6002657CC /* AdditionalGCDViewController.swift */; };
+		A16D5D5429880027002657CC /* AdditionalGCDViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */; };
+		A16D5D5729882044002657CC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A16D5D5629882044002657CC /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A123F664297FF27D00A2ABD5 /* MultithreadingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultithreadingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A123F667297FF27D00A2ABD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A123F669297FF27D00A2ABD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A123F66B297FF27D00A2ABD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A123F66B297FF27D00A2ABD5 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		A123F66E297FF27D00A2ABD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A123F670297FF27E00A2ABD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A123F673297FF27E00A2ABD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A123F675297FF27E00A2ABD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16D5D472987C7CC002657CC /* QueueAndMutexTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueAndMutexTest.swift; sourceTree = "<group>"; };
+		A16D5D4B2987D7B6002657CC /* AdditionalGCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalGCDViewController.swift; sourceTree = "<group>"; };
+		A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdditionalGCDViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16D5D5729882044002657CC /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +66,32 @@
 			children = (
 				A123F667297FF27D00A2ABD5 /* AppDelegate.swift */,
 				A123F669297FF27D00A2ABD5 /* SceneDelegate.swift */,
-				A123F66B297FF27D00A2ABD5 /* ViewController.swift */,
-				A123F66D297FF27D00A2ABD5 /* Main.storyboard */,
+				A16D5D4A2987D64F002657CC /* GCD */,
+				A16D5D492987D641002657CC /* Mutex */,
 				A123F670297FF27E00A2ABD5 /* Assets.xcassets */,
 				A123F672297FF27E00A2ABD5 /* LaunchScreen.storyboard */,
 				A123F675297FF27E00A2ABD5 /* Info.plist */,
 			);
 			path = MultithreadingTest;
+			sourceTree = "<group>";
+		};
+		A16D5D492987D641002657CC /* Mutex */ = {
+			isa = PBXGroup;
+			children = (
+				A16D5D472987C7CC002657CC /* QueueAndMutexTest.swift */,
+			);
+			path = Mutex;
+			sourceTree = "<group>";
+		};
+		A16D5D4A2987D64F002657CC /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				A123F66B297FF27D00A2ABD5 /* GCDViewController.swift */,
+				A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */,
+				A16D5D4B2987D7B6002657CC /* AdditionalGCDViewController.swift */,
+				A123F66D297FF27D00A2ABD5 /* Main.storyboard */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = MultithreadingTest;
+			packageProductDependencies = (
+				A16D5D5629882044002657CC /* Kingfisher */,
+			);
 			productName = MultithreadingTest;
 			productReference = A123F664297FF27D00A2ABD5 /* MultithreadingTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = A123F65B297FF27D00A2ABD5;
+			packageReferences = (
+				A16D5D5529882044002657CC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A123F665297FF27D00A2ABD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +161,7 @@
 				A123F674297FF27E00A2ABD5 /* LaunchScreen.storyboard in Resources */,
 				A123F671297FF27E00A2ABD5 /* Assets.xcassets in Resources */,
 				A123F66F297FF27D00A2ABD5 /* Main.storyboard in Resources */,
+				A16D5D5429880027002657CC /* AdditionalGCDViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A123F66C297FF27D00A2ABD5 /* ViewController.swift in Sources */,
+				A16D5D482987C7CC002657CC /* QueueAndMutexTest.swift in Sources */,
+				A16D5D4C2987D7B6002657CC /* AdditionalGCDViewController.swift in Sources */,
+				A123F66C297FF27D00A2ABD5 /* GCDViewController.swift in Sources */,
 				A123F668297FF27D00A2ABD5 /* AppDelegate.swift in Sources */,
 				A123F66A297FF27D00A2ABD5 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A16D5D5529882044002657CC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A16D5D5629882044002657CC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A16D5D5529882044002657CC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A123F65C297FF27D00A2ABD5 /* Project object */;
 }
