@@ -18,6 +18,7 @@
 		A16D5D5429880027002657CC /* AdditionalGCDViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */; };
 		A16D5D5729882044002657CC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A16D5D5629882044002657CC /* Kingfisher */; };
 		A16D5D5929892E06002657CC /* DispatchWorkItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D5D5829892E06002657CC /* DispatchWorkItemViewController.swift */; };
+		A1A861DB29893F3D00288C1D /* DispatchWorkItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A861DA29893F3D00288C1D /* DispatchWorkItemViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A16D5D4B2987D7B6002657CC /* AdditionalGCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalGCDViewController.swift; sourceTree = "<group>"; };
 		A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdditionalGCDViewController.storyboard; sourceTree = "<group>"; };
 		A16D5D5829892E06002657CC /* DispatchWorkItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItemViewController.swift; sourceTree = "<group>"; };
+		A1A861DA29893F3D00288C1D /* DispatchWorkItemViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DispatchWorkItemViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				A123F66B297FF27D00A2ABD5 /* GCDViewController.swift */,
 				A16D5D5829892E06002657CC /* DispatchWorkItemViewController.swift */,
+				A1A861DA29893F3D00288C1D /* DispatchWorkItemViewController.storyboard */,
 				A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */,
 				A16D5D4B2987D7B6002657CC /* AdditionalGCDViewController.swift */,
 				A123F66D297FF27D00A2ABD5 /* Main.storyboard */,
@@ -165,6 +168,7 @@
 				A123F671297FF27E00A2ABD5 /* Assets.xcassets in Resources */,
 				A123F66F297FF27D00A2ABD5 /* Main.storyboard in Resources */,
 				A16D5D5429880027002657CC /* AdditionalGCDViewController.storyboard in Resources */,
+				A1A861DB29893F3D00288C1D /* DispatchWorkItemViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

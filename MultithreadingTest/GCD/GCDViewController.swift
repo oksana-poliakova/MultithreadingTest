@@ -12,6 +12,7 @@ final class GCDViewController: UIViewController {
     // MARK: - Properties
     
     @IBOutlet private weak var pressButton: NSLayoutConstraint!
+    @IBOutlet private weak var goToDispatchWorkItemsButton: UIButton!
     
     // MARK: - Lifecycle
     
@@ -22,9 +23,9 @@ final class GCDViewController: UIViewController {
         useConcurrentPerform()
         
         getDataWithDelay(seconds: 5, queue: .main) {
-            print("Test code with delay")
+//            print("Test code with delay")
             self.showAlert()
-            print(Thread.current)
+//            print(Thread.current)
         }
     }
     
@@ -57,9 +58,9 @@ final class GCDViewController: UIViewController {
     private func useConcurrentPerform() {
         let queue = DispatchQueue.global(qos: .utility)
         queue.async {
-            DispatchQueue.concurrentPerform(iterations: 200) {
-                print("\($0) times")
-                print(Thread.current)
+            DispatchQueue.concurrentPerform(iterations: 200) {_ in
+//                print("\($0) times")
+//                print(Thread.current)
             }
         }
     }
@@ -69,7 +70,11 @@ final class GCDViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         guard let vc = UIStoryboard(name: "AdditionalGCDViewController", bundle: nil).instantiateViewController(withIdentifier: "AdditionalGCDViewController") as? AdditionalGCDViewController else { return }
         self.navigationController?.pushViewController(vc, animated: true)
-        print("pressed")
+    }
+    
+    @IBAction func goToDispatchWorkItemsButtonPressed(_ sender: Any) {
+        guard let vc = UIStoryboard(name: "DispatchWorkItemViewController", bundle: nil).instantiateViewController(withIdentifier: "DispatchWorkItemViewController") as? DispatchWorkItemViewController else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
