@@ -98,7 +98,7 @@ final class DispatchWorkItemViewController: UIViewController {
         
         queue.async(execute: workItem)
         
-        // workItem.notify is waiting when workItem ends his functions and after that starts notify
+        // workItem.notify is waiting when workItem ends his functions and after that starts notifyн
         workItem.notify(queue: DispatchQueue.main) {
             if let imageData = data {
                 self.testImage.image = UIImage(data: imageData)

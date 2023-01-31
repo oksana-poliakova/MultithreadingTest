@@ -13,6 +13,7 @@ final class GCDViewController: UIViewController {
     
     @IBOutlet private weak var pressButton: NSLayoutConstraint!
     @IBOutlet private weak var goToDispatchWorkItemsButton: UIButton!
+    @IBOutlet private weak var semaphoreButton: UIButton!
     
     // MARK: - Lifecycle
     
@@ -74,6 +75,12 @@ final class GCDViewController: UIViewController {
     
     @IBAction func goToDispatchWorkItemsButtonPressed(_ sender: Any) {
         guard let vc = UIStoryboard(name: "DispatchWorkItemViewController", bundle: nil).instantiateViewController(withIdentifier: "DispatchWorkItemViewController") as? DispatchWorkItemViewController else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func semaphoreButtonPressed(_ sender: Any) {
+        guard let vc = UIStoryboard(name: "SemaphoreViewController", bundle: nil).instantiateViewController(withIdentifier: "SemaphoreViewController") as? SemaphoreViewController else { return }
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

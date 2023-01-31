@@ -19,6 +19,8 @@
 		A16D5D5729882044002657CC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A16D5D5629882044002657CC /* Kingfisher */; };
 		A16D5D5929892E06002657CC /* DispatchWorkItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D5D5829892E06002657CC /* DispatchWorkItemViewController.swift */; };
 		A1A861DB29893F3D00288C1D /* DispatchWorkItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A861DA29893F3D00288C1D /* DispatchWorkItemViewController.storyboard */; };
+		A1A861DD2989794300288C1D /* SemaphoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A861DC2989794300288C1D /* SemaphoreViewController.swift */; };
+		A1A861DF2989794B00288C1D /* SemaphoreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A861DE2989794B00288C1D /* SemaphoreViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdditionalGCDViewController.storyboard; sourceTree = "<group>"; };
 		A16D5D5829892E06002657CC /* DispatchWorkItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItemViewController.swift; sourceTree = "<group>"; };
 		A1A861DA29893F3D00288C1D /* DispatchWorkItemViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DispatchWorkItemViewController.storyboard; sourceTree = "<group>"; };
+		A1A861DC2989794300288C1D /* SemaphoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreViewController.swift; sourceTree = "<group>"; };
+		A1A861DE2989794B00288C1D /* SemaphoreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SemaphoreViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +94,48 @@
 		A16D5D4A2987D64F002657CC /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				A123F66B297FF27D00A2ABD5 /* GCDViewController.swift */,
-				A16D5D5829892E06002657CC /* DispatchWorkItemViewController.swift */,
-				A1A861DA29893F3D00288C1D /* DispatchWorkItemViewController.storyboard */,
-				A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */,
-				A16D5D4B2987D7B6002657CC /* AdditionalGCDViewController.swift */,
-				A123F66D297FF27D00A2ABD5 /* Main.storyboard */,
+				A1A861E329897A6200288C1D /* Main */,
+				A1A861E029897A2200288C1D /* DispatchWorkItem */,
+				A1A861E129897A3200288C1D /* AdditionalTestGCD */,
+				A1A861E229897A4400288C1D /* Semaphore */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		A1A861E029897A2200288C1D /* DispatchWorkItem */ = {
+			isa = PBXGroup;
+			children = (
+				A16D5D5829892E06002657CC /* DispatchWorkItemViewController.swift */,
+				A1A861DA29893F3D00288C1D /* DispatchWorkItemViewController.storyboard */,
+			);
+			path = DispatchWorkItem;
+			sourceTree = "<group>";
+		};
+		A1A861E129897A3200288C1D /* AdditionalTestGCD */ = {
+			isa = PBXGroup;
+			children = (
+				A16D5D4B2987D7B6002657CC /* AdditionalGCDViewController.swift */,
+				A16D5D5329880027002657CC /* AdditionalGCDViewController.storyboard */,
+			);
+			path = AdditionalTestGCD;
+			sourceTree = "<group>";
+		};
+		A1A861E229897A4400288C1D /* Semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				A1A861DC2989794300288C1D /* SemaphoreViewController.swift */,
+				A1A861DE2989794B00288C1D /* SemaphoreViewController.storyboard */,
+			);
+			path = Semaphore;
+			sourceTree = "<group>";
+		};
+		A1A861E329897A6200288C1D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A123F66B297FF27D00A2ABD5 /* GCDViewController.swift */,
+				A123F66D297FF27D00A2ABD5 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +205,7 @@
 				A123F674297FF27E00A2ABD5 /* LaunchScreen.storyboard in Resources */,
 				A123F671297FF27E00A2ABD5 /* Assets.xcassets in Resources */,
 				A123F66F297FF27D00A2ABD5 /* Main.storyboard in Resources */,
+				A1A861DF2989794B00288C1D /* SemaphoreViewController.storyboard in Resources */,
 				A16D5D5429880027002657CC /* AdditionalGCDViewController.storyboard in Resources */,
 				A1A861DB29893F3D00288C1D /* DispatchWorkItemViewController.storyboard in Resources */,
 			);
@@ -180,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16D5D482987C7CC002657CC /* QueueAndMutexTest.swift in Sources */,
+				A1A861DD2989794300288C1D /* SemaphoreViewController.swift in Sources */,
 				A16D5D4C2987D7B6002657CC /* AdditionalGCDViewController.swift in Sources */,
 				A123F66C297FF27D00A2ABD5 /* GCDViewController.swift in Sources */,
 				A123F668297FF27D00A2ABD5 /* AppDelegate.swift in Sources */,
