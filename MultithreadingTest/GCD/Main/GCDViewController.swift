@@ -14,6 +14,7 @@ final class GCDViewController: UIViewController {
     @IBOutlet private weak var pressButton: NSLayoutConstraint!
     @IBOutlet private weak var goToDispatchWorkItemsButton: UIButton!
     @IBOutlet private weak var semaphoreButton: UIButton!
+    @IBOutlet private weak var dispatchGroupButton: UIButton!
     
     // MARK: - Lifecycle
     
@@ -50,7 +51,7 @@ final class GCDViewController: UIViewController {
         let alert = UIAlertController(title: "Hello", message: "It's alert", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(action)
-        present(alert, animated: true)
+//        present(alert, animated: true)
     }
     
     // MARK: - Concurrent perform
@@ -78,6 +79,10 @@ final class GCDViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func dispatchGroupButtonPressed(_ sender: Any) {
+        guard let vc = UIStoryboard(name: "DispatchGroupViewController", bundle: nil).instantiateViewController(withIdentifier: "DispatchGroupViewController") as? DispatchGroupViewController else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     @IBAction func semaphoreButtonPressed(_ sender: Any) {
         guard let vc = UIStoryboard(name: "SemaphoreViewController", bundle: nil).instantiateViewController(withIdentifier: "SemaphoreViewController") as? SemaphoreViewController else { return }

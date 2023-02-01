@@ -31,9 +31,9 @@ final class SemaphoreViewController: UIViewController {
     private func useSemaphore() {
         
         queue.sync {
-            self.semaphore.wait() // -1
+            self.semaphore.wait() // -1 decrement
             print("Method 1")
-            self.semaphore.signal() // +1
+            self.semaphore.signal() // +1 increment
         }
         
         queue.sync {
