@@ -24,13 +24,9 @@ final class GCDViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        useConcurrentPerform()
-        
-        getDataWithDelay(seconds: 5, queue: .main) {
-//            print("Test code with delay")
-            self.showAlert()
-//            print(Thread.current)
-        }
+//        useConcurrentPerform()
+//        useDelay()
+
     }
     
     // MARK: - Setup UI
@@ -53,7 +49,15 @@ final class GCDViewController: UIViewController {
         let alert = UIAlertController(title: "Hello", message: "It's alert", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(action)
-//        present(alert, animated: true)
+        present(alert, animated: true)
+    }
+    
+    private func useDelay() {
+        getDataWithDelay(seconds: 5, queue: .main) {
+            print("Test code with delay")
+            self.showAlert()
+            print(Thread.current)
+        }
     }
     
     // MARK: - Concurrent perform
@@ -64,7 +68,7 @@ final class GCDViewController: UIViewController {
         queue.async {
             DispatchQueue.concurrentPerform(iterations: 200) {_ in
 //                print("\($0) times")
-//                print(Thread.current)
+                print(Thread.current)
             }
         }
     }

@@ -9,6 +9,8 @@ import UIKit
 
 final class OperationQueueViewController: UIViewController {
     
+    // MARK: - Properties
+    
     private let queue = OperationQueue()
 
     // MARK: - Lifecycle

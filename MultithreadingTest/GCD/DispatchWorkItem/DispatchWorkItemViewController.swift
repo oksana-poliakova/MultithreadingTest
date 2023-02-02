@@ -17,7 +17,7 @@ final class DispatchWorkItemViewController: UIViewController {
         super.viewDidLoad()
         
 //        createDispatchWorkItem1()
-        createDispatchWorkItem2()
+//        createDispatchWorkItem2()
         fetchImage()
     }
     
@@ -30,13 +30,13 @@ final class DispatchWorkItemViewController: UIViewController {
         
         func create() {
             let workItem = DispatchWorkItem {
-//                print(Thread.current)
-//                print("Start task1")
+                print(Thread.current)
+                print("Start task1")
             }
             
             workItem.notify(queue: .main) {
-//                print(Thread.current)
-//                print("Finish tasss")
+                print(Thread.current)
+                print("Finish tasss")
             }
             
             queue.async(execute: workItem)
@@ -53,23 +53,23 @@ final class DispatchWorkItemViewController: UIViewController {
         
         func create() {
             queue.async {
-//                sleep(2)
-//                print("Task 1")
+                sleep(2)
+                print("Task 1")
             }
             
             queue.async {
-//                sleep(2)
-//                print("Task 2")
+                sleep(2)
+                print("Task 2")
             }
             
             queue.async {
-//                sleep(2)
-//                print("Task 3")
+                sleep(2)
+                print("Task 3")
             }
             
             let workItem = DispatchWorkItem {
-//                print(Thread.current)
-//                print("DispatchWorkItem started working")
+                print(Thread.current)
+                print("DispatchWorkItem started working")
             }
             
             // firstly starts here

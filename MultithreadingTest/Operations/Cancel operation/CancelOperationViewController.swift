@@ -7,10 +7,14 @@
 
 import UIKit
 
-class CancelOperationViewController: UIViewController {
+final class CancelOperationViewController: UIViewController {
 
+    // MARK: - Properties
+    
     private let cancelOperation = OperationCancelTest()
     private let operationQueue = OperationQueue()
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
