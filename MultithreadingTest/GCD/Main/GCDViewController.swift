@@ -15,6 +15,8 @@ final class GCDViewController: UIViewController {
     @IBOutlet private weak var goToDispatchWorkItemsButton: UIButton!
     @IBOutlet private weak var semaphoreButton: UIButton!
     @IBOutlet private weak var dispatchGroupButton: UIButton!
+    @IBOutlet private weak var operationButton: UIButton!
+    @IBOutlet private weak var cancelOperationButton: UIButton!
     
     // MARK: - Lifecycle
     
@@ -38,7 +40,7 @@ final class GCDViewController: UIViewController {
     }
     
     // MARK: - Async after
-    
+    // Write Escaping when passing a completion as an argument to the function
     private func getDataWithDelay(seconds: Int,
                                   queue: DispatchQueue = DispatchQueue.global(),
                                   completion: @escaping () -> ()) {
@@ -88,5 +90,16 @@ final class GCDViewController: UIViewController {
         guard let vc = UIStoryboard(name: "SemaphoreViewController", bundle: nil).instantiateViewController(withIdentifier: "SemaphoreViewController") as? SemaphoreViewController else { return }
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func operationButtonPressed(_ sender: Any) {
+        guard let vc = UIStoryboard(name: "OperationQueueViewController", bundle: nil).instantiateViewController(withIdentifier: "OperationQueueViewController") as? OperationQueueViewController else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func cancelOperationButtonPressed(_ sender: Any) {
+        guard let vc = UIStoryboard(name: "CancelOperationViewController", bundle: nil).instantiateViewController(withIdentifier: "CancelOperationViewController") as? CancelOperationViewController else { return }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 

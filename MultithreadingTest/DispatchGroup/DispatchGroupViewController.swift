@@ -21,7 +21,7 @@ final class DispatchGroupViewController: UIViewController {
         super.viewDidLoad()
         
         //        testDispatchGroup()
-        testDispatchGroupConcurrent()
+//        testDispatchGroupConcurrent()
         
     }
     

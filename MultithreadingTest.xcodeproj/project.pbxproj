@@ -23,6 +23,11 @@
 		A1A861DF2989794B00288C1D /* SemaphoreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A861DE2989794B00288C1D /* SemaphoreViewController.storyboard */; };
 		A1A861E6298A664400288C1D /* DispatchGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A861E5298A664400288C1D /* DispatchGroupViewController.swift */; };
 		A1A861E8298A664A00288C1D /* DispatchGroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A861E7298A664A00288C1D /* DispatchGroupViewController.storyboard */; };
+		A1A861EB298BB80200288C1D /* OperationQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A861EA298BB80200288C1D /* OperationQueueViewController.swift */; };
+		A1A861ED298BB9E800288C1D /* OperationQueueViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A861EC298BB9E800288C1D /* OperationQueueViewController.storyboard */; };
+		A1A861F0298BCEF200288C1D /* CancelOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A861EF298BCEF200288C1D /* CancelOperationViewController.swift */; };
+		A1A861F2298BCEFB00288C1D /* CancelOperationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A861F1298BCEFB00288C1D /* CancelOperationViewController.storyboard */; };
+		A1A861F4298BCFAB00288C1D /* OperationCancelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A861F3298BCFAB00288C1D /* OperationCancelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		A1A861DE2989794B00288C1D /* SemaphoreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SemaphoreViewController.storyboard; sourceTree = "<group>"; };
 		A1A861E5298A664400288C1D /* DispatchGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupViewController.swift; sourceTree = "<group>"; };
 		A1A861E7298A664A00288C1D /* DispatchGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DispatchGroupViewController.storyboard; sourceTree = "<group>"; };
+		A1A861EA298BB80200288C1D /* OperationQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueueViewController.swift; sourceTree = "<group>"; };
+		A1A861EC298BB9E800288C1D /* OperationQueueViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OperationQueueViewController.storyboard; sourceTree = "<group>"; };
+		A1A861EF298BCEF200288C1D /* CancelOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOperationViewController.swift; sourceTree = "<group>"; };
+		A1A861F1298BCEFB00288C1D /* CancelOperationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CancelOperationViewController.storyboard; sourceTree = "<group>"; };
+		A1A861F3298BCFAB00288C1D /* OperationCancelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationCancelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 			children = (
 				A123F667297FF27D00A2ABD5 /* AppDelegate.swift */,
 				A123F669297FF27D00A2ABD5 /* SceneDelegate.swift */,
+				A1A861E9298BB7E500288C1D /* Operations */,
 				A16D5D4A2987D64F002657CC /* GCD */,
 				A1A861E4298A65E600288C1D /* DispatchGroup */,
 				A16D5D492987D641002657CC /* Mutex */,
@@ -152,6 +163,26 @@
 			path = DispatchGroup;
 			sourceTree = "<group>";
 		};
+		A1A861E9298BB7E500288C1D /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				A1A861EA298BB80200288C1D /* OperationQueueViewController.swift */,
+				A1A861EC298BB9E800288C1D /* OperationQueueViewController.storyboard */,
+				A1A861EE298BCEDE00288C1D /* Cancel operation */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		A1A861EE298BCEDE00288C1D /* Cancel operation */ = {
+			isa = PBXGroup;
+			children = (
+				A1A861EF298BCEF200288C1D /* CancelOperationViewController.swift */,
+				A1A861F3298BCFAB00288C1D /* OperationCancelTest.swift */,
+				A1A861F1298BCEFB00288C1D /* CancelOperationViewController.storyboard */,
+			);
+			path = "Cancel operation";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,8 +250,10 @@
 				A123F674297FF27E00A2ABD5 /* LaunchScreen.storyboard in Resources */,
 				A1A861E8298A664A00288C1D /* DispatchGroupViewController.storyboard in Resources */,
 				A123F671297FF27E00A2ABD5 /* Assets.xcassets in Resources */,
+				A1A861ED298BB9E800288C1D /* OperationQueueViewController.storyboard in Resources */,
 				A123F66F297FF27D00A2ABD5 /* Main.storyboard in Resources */,
 				A1A861DF2989794B00288C1D /* SemaphoreViewController.storyboard in Resources */,
+				A1A861F2298BCEFB00288C1D /* CancelOperationViewController.storyboard in Resources */,
 				A16D5D5429880027002657CC /* AdditionalGCDViewController.storyboard in Resources */,
 				A1A861DB29893F3D00288C1D /* DispatchWorkItemViewController.storyboard in Resources */,
 			);
@@ -237,9 +270,12 @@
 				A16D5D482987C7CC002657CC /* QueueAndMutexTest.swift in Sources */,
 				A1A861DD2989794300288C1D /* SemaphoreViewController.swift in Sources */,
 				A16D5D4C2987D7B6002657CC /* AdditionalGCDViewController.swift in Sources */,
+				A1A861F0298BCEF200288C1D /* CancelOperationViewController.swift in Sources */,
 				A123F66C297FF27D00A2ABD5 /* GCDViewController.swift in Sources */,
+				A1A861EB298BB80200288C1D /* OperationQueueViewController.swift in Sources */,
 				A123F668297FF27D00A2ABD5 /* AppDelegate.swift in Sources */,
 				A16D5D5929892E06002657CC /* DispatchWorkItemViewController.swift in Sources */,
+				A1A861F4298BCFAB00288C1D /* OperationCancelTest.swift in Sources */,
 				A123F66A297FF27D00A2ABD5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

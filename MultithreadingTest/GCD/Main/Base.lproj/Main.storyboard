@@ -88,10 +88,47 @@
                                     <action selector="dispatchGroupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYd-Zj-bZ1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzA-lb-jl5">
+                                <rect key="frame" x="16" y="355" width="361" height="50"/>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.015686274510000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OE6-Us-VvT"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OperationQueue testing"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RdE-CB-V8I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bc-gR-98O">
+                                <rect key="frame" x="16" y="421" width="361" height="50"/>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.015686274510000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eji-e0-NI3"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel operation testing"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelOperationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTz-Ne-rFR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3bc-gR-98O" firstAttribute="top" secondItem="fzA-lb-jl5" secondAttribute="bottom" constant="16" id="0Pk-rO-9W9"/>
                             <constraint firstItem="Wqa-0v-zKv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5j1-Nb-jFV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Koe-ps-eRM" secondAttribute="trailing" constant="16" id="6uG-XC-Bzv"/>
                             <constraint firstItem="1VG-J2-eub" firstAttribute="top" secondItem="FjK-5b-p0w" secondAttribute="bottom" constant="20" id="FPk-tj-trW"/>
@@ -99,17 +136,24 @@
                             <constraint firstItem="Wqa-0v-zKv" firstAttribute="top" secondItem="Koe-ps-eRM" secondAttribute="bottom" constant="20" id="MYC-u6-yf3"/>
                             <constraint firstItem="Koe-ps-eRM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SEP-je-Xbn"/>
                             <constraint firstItem="Koe-ps-eRM" firstAttribute="top" secondItem="1VG-J2-eub" secondAttribute="bottom" constant="20" id="VHC-2R-g4d"/>
+                            <constraint firstItem="fzA-lb-jl5" firstAttribute="top" secondItem="Wqa-0v-zKv" secondAttribute="bottom" constant="20" id="Vek-zy-zzb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FjK-5b-p0w" secondAttribute="trailing" constant="16" id="Y2v-mQ-Cpe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3bc-gR-98O" secondAttribute="trailing" constant="16" id="bMn-OA-YTP"/>
+                            <constraint firstItem="fzA-lb-jl5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dGy-nb-EFj"/>
                             <constraint firstItem="FjK-5b-p0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="khw-bk-aIa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wqa-0v-zKv" secondAttribute="trailing" constant="16" id="lgQ-Sc-9eV"/>
                             <constraint firstItem="1VG-J2-eub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="o1u-aM-4ui"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fzA-lb-jl5" secondAttribute="trailing" constant="16" id="o4d-c0-rIb"/>
+                            <constraint firstItem="3bc-gR-98O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wEk-hS-cnf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1VG-J2-eub" secondAttribute="trailing" constant="16" id="wb8-Q1-Sdj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P8y-zH-SdC"/>
                     <connections>
+                        <outlet property="cancelOperationButton" destination="3bc-gR-98O" id="BJU-hJ-K8c"/>
                         <outlet property="dispatchGroupButton" destination="Wqa-0v-zKv" id="eIM-41-KXX"/>
                         <outlet property="goToDispatchWorkItemsButton" destination="1VG-J2-eub" id="Ctz-Ym-hMm"/>
+                        <outlet property="operationButton" destination="fzA-lb-jl5" id="Ti5-Gd-muu"/>
                         <outlet property="pressButton" destination="FjK-5b-p0w" id="pHv-q3-lXJ"/>
                         <outlet property="semaphoreButton" destination="Koe-ps-eRM" id="afI-gA-XIZ"/>
                     </connections>
